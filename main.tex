@@ -1,0 +1,74 @@
+\documentclass[UTF8]{ctexbeamer}
+\usetheme{Madrid}
+%\usecolortheme{beaver}
+\usepackage{graphicx}
+\usepackage{multicol}
+\DeclareGraphicsExtensions{.eps,.ps,.jpg,.bmp,.png}
+%%Information to be included in the title page:
+%\title{X}
+%\author{Deli}
+%%\institute{Deli institute}
+%\date{\today}
+\title[眼睛] %optional
+{眼睛}
+% [] {} 两个还是有区别的，具体的差异尝试编译一下就了解了。
+
+\subtitle{第九章}
+% 副标题，beamer的默认模板中基本上这些内容都有
+
+\author[]{徐骄阳} % (optional, for multiple authors)
+% {Deli1\inst{1} \and Deli2\inst{2}}
+
+\institute[系统科学学院]{系统科学学院} % (optional)
+% {
+% 	\inst{1}%
+% 	Faculty of Physics\\
+% 	Very Famous University
+% 	\and
+% 	\inst{2}%
+% 	Faculty of Chemistry\\
+% 	Very Famous University
+% }
+
+\date[\today]{} % (optional)
+%在每个section 前边单独插入当前章节高亮的目录页（当然最原始的目录页你还是需要手动录入的，不要想偷懒）
+\AtBeginSection[]
+{   
+    \begin{frame}
+        \frametitle{目录}
+        \begin{multicols}{2}    
+            \tableofcontents[currentsection,hideallsubsections]
+        \end{multicols}
+    \end{frame}
+
+	% \begin{frame}
+	% 	\frametitle{梗概}
+	% 	\tableofcontents[hideallsubsections]
+	% \end{frame}
+}
+\begin{document}
+\frame{\titlepage}
+\section*{引言}
+\begin{frame}
+    \frametitle{引言}
+
+    \textbf{视觉}(vision)对于动物而言非常重要，因为它赋予了生命感知周围物体的一个途径。
+    通过视觉一个智能体便能接收光信号进行处理后，对环境的
+
+\end{frame}
+\include{frames/sec1.tex}
+\include{frames/sec2.tex}
+\include{frames/sec3.tex}
+\include{frames/sec4.tex}
+\include{frames/sec5.tex}
+\include{frames/sec6.tex}
+\include{frames/sec7.tex}
+
+\section*{结语}
+\begin{frame}
+    \frametitle{结语}
+
+    bbb
+
+\end{frame}
+\end{document}

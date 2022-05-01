@@ -4,6 +4,17 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{subfigure}
+
+% \newcommand{\bf}[1]{\textbf{\emph{#1}}}
+% \newcommand{\img}[2]
+% {
+%     \begin{figure}
+%         \centering
+%         \includegraphics{\emph{#1}}
+%         \caption{\emph{#2}}
+%     \end{figure}
+% }
+
 \DeclareGraphicsExtensions{.eps,.ps,.jpg,.bmp,.png}
 %%Information to be included in the title page:
 %\title{X}
@@ -52,21 +63,25 @@
 \section*{引言}
 \begin{frame}
     \frametitle{引言}
+    \begin{itemize}
+        \item  \textbf{视觉}(vision)对于动物而言非常重要，因为它赋予了生命感知周围物体的一个途径。
+        通过视觉一个智能体便能接收光信号进行处理后，对环境的刺激做出反应。视觉的显著意义也许可以从人体大脑皮层约有一半区域介入对视觉世界的分析
+        事实得到最佳的证明.
+        \item 哺乳动物的视觉系统始于\textbf{眼睛}。 眼睛的背部是\textbf{视网膜} (retina) ，
+        这里拥有特化的、将光能转化成神经活动的光感受器 。眼睛的其余部分像照相机，
+        在视网膜上形成清晰的、但是并不永久的图像。眼睛可以自动调节亮度的差异，
+        并自动聚焦于所感兴趣的物体。眼睛还具有诸如通过眼动对移动目标的跟踪，以及通过过眼泪和眨泪使其透明表面保持清洁的能力。
+    \end{itemize}
+\end{frame}
 
-    \textbf{视觉}(vision)对于动物而言非常重要，因为它赋予了生命感知周围物体的一个途径。
-    一个智能体通过视觉便能接收光信号进行检测与辨识，经过大脑的加工，对环境的变化做出相应的响应。
-
-    哺乳动物的视觉系统始于眼睛，眼睛的背部是\textbf{视网膜}(retina)这里拥有特化的，将光能转化为神经活动的光感受器。
-    眼睛的其余部分类似于相机的光学原理，在视网膜上形成清晰的，但暂时的图像。此外眼睛还有自动调节亮度差异，自动聚焦感兴趣物体，移动目标跟踪
-    以及通过眼泪和眨眼保持表面的清洁。
-    
-    此处强调视网膜与胶卷有很大的不同，每个眼睛都有两个互相重叠的视网膜:一个特化为在低亮度(黄昏至黎明)时段工作；
-    另一个特化为高亮度时工作，视网膜的输出会进行一定的处理与且与光的绝对强度无关。
-
-    视网膜神经元的轴突汇聚成视神经，它们以动作电位的方式将视觉信息传送至数个履行各种功能的大脑结构趋于、
-    视神经的一些中枢靶结构参与一些与昼夜节律同步的生物节律的调节，另外一些则参与对眼睛位置和光学功能的控制。
-    然而视觉通路肿第一个突触中继站是位于丘脑背侧的一个细胞群体，叫做\textbf{外侧膝状体核}(lateral geniculate nucleus, LGN)
-    视觉信息自LGN传至大脑皮层，进而得到解读和记忆。
+\begin{frame}
+    \frametitle{本章主要内容}
+    在本章中，我们将对眼睛和视网膜进行考察：
+    \begin{itemize}
+        \item 光怎样将信息携带至我们的视觉系统;
+        \item 眼睛怎样将图像形成于视网膜上;
+        \item 视网膜怎样将光能转化为神经信号以提取关于亮度和颜色差异的信号
+    \end{itemize}
 \end{frame}
 \include{frames/sec1.tex}
 \include{frames/sec2.tex}
